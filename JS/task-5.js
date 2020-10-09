@@ -3,9 +3,8 @@ function getAllPropValues(array, prop) {
   // Write code under this line
   let newArray = [];
   for (let key in array) {
-    const key = prop;
-    if (key in array) {
-      newArray = array.push(key);
+    if (prop in array[key]) {
+      newArray.push(array[key][prop]);
     }
   }
   return newArray;

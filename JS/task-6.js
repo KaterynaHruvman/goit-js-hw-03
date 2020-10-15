@@ -28,3 +28,12 @@ console.log(calculateTotalPrice(products, 'Захват'));
 // 2400
 
 console.log(calculateTotalPrice(products, 'Дроид')); 
+const target = { 
+id: 24, 
+isOnline: true, 
+...{name: 'Mango', age: 2}, 
+...{age: 7, isOnline: false} 
+}
+console.log(target)
+const [grapes, oranges, apples] = [10, 2];
+console.log(apples)
